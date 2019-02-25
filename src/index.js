@@ -3,5 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { router } from 'sw-toolbox';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(
+<Router>
+    <App />
+</Router>
+, document.getElementById('root'));
